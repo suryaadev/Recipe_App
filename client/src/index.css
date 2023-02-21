@@ -1,0 +1,20 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Rubik&display=swap');
+
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* > *{
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #dcdce6;
+    background-image: url('./assets/Background.png');
+}

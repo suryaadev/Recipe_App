@@ -9,12 +9,14 @@ import Profile from "./components/Profile";
 import Reset from "./components/Reset";
 import PageNotFound from "./components/PageNotFound";
 import Recovery from "./components/Recovery";
+import Login from "./components/Login";
 
 // Root routes
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Username />,
+    // element: <Username />,
+    element: <Login />,
   },
   {
     path: "/register",

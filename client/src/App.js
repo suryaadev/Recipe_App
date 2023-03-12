@@ -13,7 +13,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-gray-500 to-black-600 w-full h-screen">
+    <div className="bg-gradient-to-r from-gray-500 to-black-600 w-full h-full">
       <Router>
         <Navbar />
         <Routes>

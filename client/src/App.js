@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import axios from "axios";
+import "./index.css"
+
 
 import Home from "./pages/Home.js";
 import Auth from "./pages/Auth.js";
@@ -11,7 +13,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-gradient-to-r from-gray-500 to-black-600 w-full h-screen">
       <Router>
         <Navbar />
         <Routes>

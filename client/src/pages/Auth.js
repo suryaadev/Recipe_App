@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
   return (
-    <div className="auth">
+    <div className="flex w-full h-[80vh] items-center justify-around">
       <Login />
       <Register />
     </div>
@@ -33,7 +33,7 @@ const Login = () => {
       navigate("/");
     } catch (error) {
       console.log(error);
-      alert("Wrong credentials")
+      alert("Wrong credentials");
     }
   };
 
@@ -87,27 +87,38 @@ const Form = ({
   onSubmit,
 }) => {
   return (
-    <div className="auth-container">
-      <form onSubmit={onSubmit}>
-        <h2>{formName}</h2>
-        <div className="form-group">
-          <label htmlFor="username">Username</label>
+    <div className="bg-gray-300 w-[30%] p-6 rounded-xl py-12 drop-shadow-2xl">
+      <form onSubmit={onSubmit} className="flex flex-col items-center justify-center">
+        <h2 className="uppercase text-center text-3xl mb-4">{formName}</h2>
+        <div className="flex flex-col space-y-3 text-center">
+          <label className="text-lg " htmlFor="username">
+            Username
+          </label>
           <input
+            className="rounded-lg border-2 border-black p-1"
             type="text"
             value={username}
             onChange={(event) => setUsername(event.target.value)}
             id="username"
           />
 
-          <label htmlFor="password">Password</label>
+          <label className="text-lg " htmlFor="password">
+            Password
+          </label>
           <input
+            className="rounded-lg border-2 border-black p-1"
             type="password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             id="password"
           />
         </div>
-        <button type="submit">{formName}</button>
+        <button
+          className="my-6 p-2 w-4/5 rounded-xl text-white uppercase mb-2 bg-red-800"
+          type="submit"
+        >
+          {formName}
+        </button>
       </form>
     </div>
   );

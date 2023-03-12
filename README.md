@@ -23,3 +23,11 @@
 -Saved recipe 
 
 ![Screenshot from 2023-03-12 11-50-57](https://user-images.githubusercontent.com/47253310/224528188-f389b806-026c-42c1-bc84-5e941c319741.png)
+
+
+# Tech stack : 
+
+- Mongo DB
+- Express
+- React
+- Node
